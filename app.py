@@ -822,7 +822,7 @@ def page_contact():
     wa_qr = img_to_b64("qr/whatsapp_qr.jpeg")
     insta_qr = img_to_b64("qr/instagram_qr.jpeg")
 
-    st.markdown(
+    st.html(
         f"""
         <div class="contact-grid">
             <div class="contact-card">
@@ -897,8 +897,7 @@ def page_contact():
             </div>
         </div>
         """,
-        unsafe_allow_html=True,
-    )
+        )
 
     # Quick order form
     st.markdown('<div class="divider-dot"><div class="d"></div></div>', unsafe_allow_html=True)
